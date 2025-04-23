@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> MAIN PAGE </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="d1"></div>
+  <img class="logo" src="Images/HUMANISTA.png" alt="header" />
+  <div class="navigation">
+    <a href="dashboard.html" target="iframe" class="iframe-button">
+      <div class="item">HOME</div>
+    </a>
+    <a href="ABOUTUS.html" target="iframe" class="iframe-button">
+      <div class="item">ABOUT US</div>
+    </a>
+    <a href="YEARBOOK.html" target="iframe" class="iframe-button">
+      <div class="item" style="width: 125px;">YEARBOOK</div>
+    </a>
+    <a href="JA_PHOTOS.html" target="iframe" class="iframe-button">
+      <div class="item" style="width: 140px;">PHOTO ALBUM</div>
+    </a>
+    <a href="ONGOING.html" target="iframe" class="iframe-button">
+      <div class="item">VIDEOS</div>
+    </a>
+    <a href="PLAYLIST.html" target="iframe" class="iframe-button">
+      <div class="item">PLAYLIST</div>
+    </a>
+    <a href="TEAMS.html" target="iframe" class="iframe-button">
+      <div class="item" style="width: 80px;">TEAM</div>
+    </a>
+    <a href="faqs.html" target="iframe" class="iframe-button">
+      <div class="item" style="width: 75px;">FAQs</div>
+    </a>
+  </div>
+  <div class="body">
+    <iframe name="iframe" src="dashboard.html"></iframe>
+  </div>
+  <audio id="bgmusic" loop>
+    <source src="bgmusic.mp3" type="audio/mp3" />
+  </audio>
+  <button id="music-toggle">Music On</button>
+  <audio id="click-sound" preload="auto">
+    <source src="click-bubblesound.mp3" type="audio/mp3" />
+  </audio>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540" width="100%" height="auto">
+    <path fill="#Bec5a4" fill-opacity="1" d="M0,32L80,53.3C160,75,320,117,480,112C640,107,800,53,960,37.3C1120,21,1280,43,1360,53.3L1440,64L1440,540L1360,540C1280,540,1120,540,960,540C800,540,640,540,480,540C320,540,160,540,80,540L0,540Z"></path>
+    <foreignObject x="0" y="200" width="100%" height="220">
+      <div class="footer" xmlns="http://www.w3.org/1999/xhtml">
+        <img class="logof" src="Images/logo.png" alt="WebLogo" />
+        <div class="explore">
+          <p class="t1">KNOW MORE</p>
+          <a href="" target="iframe2">
+            <p class="p-exp">Students</p>
+          </a>
+          <a href="" target="iframe2">
+            <p class="p-exp">Teachers</p>
+          </a>
+          <a href="" target="iframe2">
+            <p class="p-exp">Administrators</p>
+          </a>
+        </div>
+        <div class="explore">
+          <p class="t1">Follow Us</p>
+          <a href="https://www.facebook.com/profile.php?id=61574107397929" target="_blank">
+            <p class="p-exp">Facebook</p>
+          </a>
+        </div>
+        <div class="explore">
+          <p class="t1">Others</p>
+          <p class="p-exp">Find related websites</p>
+          <p class="p-exp">HUMSS A.Y 2024-2025</p>
+        </div>
+        <div style="margin-left: auto; margin-right: 70px;" class="explore">
+          <p class="t1">Contact Us</p>
+          <p class="p-exp">+63 2468097531</p>
+          <p class="p-exp">miahnista@olivarezcollegeparanaquecity.com</p>
+        </div>
+      </div>
+    </foreignObject>
+  </svg>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const bgMusic = document.getElementById('bgmusic');
+      const toggleBtn = document.getElementById('music-toggle');
+      const clickSound = document.getElementById('click-sound');
+toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (bgMusic.paused) {
+          bgMusic.play();
+          toggleBtn.textContent = 'Music Off';
+        } else {
+          bgMusic.pause();
+          toggleBtn.textContent = 'Music On';
+        }
+      });
+
+      document.querySelectorAll('.iframe-button').forEach(button => {
+        button.addEventListener('click', () => {
+          clickSound.currentTime = 0;
+          clickSound.play();
+        });
+      });
+    });
+  </script>
+</body>
+<style>
+  svg {
+    position: relative;
+    bottom: 0;
+    display: block;
+  }
+  .footer {
+    display: flex;
+    z-index: 10;
+  }
+  .t1 {
+    font-family: 'Poppins', Sans-Serif;
+    font-size: 18px;
+    color: black;
+    padding: 0;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+  .p-exp {
+    font-family: 'Poppins', Sans-Serif;
+    font-size: 15px;
+    color: black;
+    padding: 0;
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  .logof {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+  }
+  .explore {
+    margin-left: 30px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #C9D3AC;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  .d1 {
+    background-color: #A7B88C;
+    width: 100%;
+    height: 30px;
+  }
+  .logo {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    transform: scale(1.2);
+  }
+  .navigation {
+    background-color: #97AA62;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item {
+    background-color: #9BB87E;
+    height: 30px;
+    line-height: 30px;
+    width: 110px;
+    text-align: center;
+    margin: 0 4px;
+    font-weight: 700;
+    color: #FEFFDF;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  .item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #8A9B5B;
+  }
+  .item:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #7A8A4B;
+  }
+  a {
+    text-decoration: none;
+  }
+  .body {
+    justify-items: center;
+  }
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+    margin: 8px 0;
+  }
+  #music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9BB87E;
+    border: none;
+    color: #FEFFDF;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #music-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .iframe-button .item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+</style>
+</html>
