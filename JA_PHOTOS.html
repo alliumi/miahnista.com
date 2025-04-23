@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> PHOTOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #C9D3AC;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .month-section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .month-logo {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      opacity: 0;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: fadeIn 1s forwards;
+    }
+    .gallery img:nth-child(1) { animation-delay: 0.1s; }
+    .gallery img:nth-child(2) { animation-delay: 0.2s; }
+    .gallery img:nth-child(3) { animation-delay: 0.3s; }
+    .gallery img:nth-child(4) { animation-delay: 0.4s; }
+    .gallery img:nth-child(5) { animation-delay: 0.5s; }
+    .gallery img:nth-child(6) { animation-delay: 0.6s; }
+    .gallery img:nth-child(7) { animation-delay: 0.7s; }
+    .gallery img:nth-child(8) { animation-delay: 0.8s; }
+    .gallery img:nth-child(9) { animation-delay: 0.9s; }
+    .gallery img:nth-child(10) { animation-delay: 1s; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; 
+      left: 0; 
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeInModal 0.3s;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      animation: popUp 0.3s forwards;
+    }
+    @keyframes fadeInModal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="month-section">
+    <img class="month-logo" src="Images/ja.png" alt="July August">
+    <div class="gallery">
+      <img src="JULY-AUGUST/ja1.png" alt="Image 1">
+      <img src="JULY-AUGUST/ja2.png" alt="Image 2">
+      <img src="JULY-AUGUST/ja3.png" alt="Image 3">
+      <img src="JULY-AUGUST/ja4.png" alt="Image 4">
+      <img src="JULY-AUGUST/ja5.png" alt="Image 5">
+      <img src="JULY-AUGUST/ja6.png" alt="Image 6">
+      <img src="JULY-AUGUST/ja7.png" alt="Image 7">
+      <img src="JULY-AUGUST/ja8.png" alt="Image 8">
+      <img src="JULY-AUGUST/ja9.png" alt="Image 9">
+      <img src="JULY-AUGUST/ja10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/sep.png" alt="September">
+    <div class="gallery">
+      <img src="SEP/s1.png" alt="Image 1">
+      <img src="SEP/s2.png" alt="Image 2">
+      <img src="SEP/s3.png" alt="Image 3">
+      <img src="SEP/s4.png" alt="Image 4">
+      <img src="SEP/s5.png" alt="Image 5">
+      <img src="SEP/s6.png" alt="Image 6">
+      <img src="SEP/s7.png" alt="Image 7">
+      <img src="SEP/s8.png" alt="Image 8">
+      <img src="SEP/s9.png" alt="Image 9">
+      <img src="SEP/s10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/oct.png" alt="October">
+    <div class="gallery">
+      <img src="OCT/oc1.png" alt="Image 1">
+      <img src="OCT/oc2.png" alt="Image 2">
+<img src="OCT/oc3.png" alt="Image 3">
+      <img src="OCT/oc4.png" alt="Image 4">
+      <img src="OCT/oc5.png" alt="Image 5">
+      <img src="OCT/oc6.png" alt="Image 6">
+      <img src="OCT/oc7.png" alt="Image 7">
+      <img src="OCT/oc8.png" alt="Image 8">
+      <img src="OCT/oc9.png" alt="Image 9">
+      <img src="OCT/oc10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/nov.png" alt="November">
+    <div class="gallery">
+      <img src="NOV/n1.png" alt="Image 1">
+      <img src="NOV/n2.png" alt="Image 2">
+      <img src="NOV/n3.png" alt="Image 3">
+      <img src="NOV/n4.png" alt="Image 4">
+      <img src="NOV/n5.png" alt="Image 5">
+      <img src="NOV/n6.png" alt="Image 6">
+      <img src="NOV/n7.png" alt="Image 7">
+      <img src="NOV/n8.png" alt="Image 8">
+      <img src="NOV/n9.png" alt="Image 9">
+      <img src="NOV/n10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/dec.png" alt="December">
+    <div class="gallery">
+      <img src="DEC/d1.png" alt="Image 1">
+      <img src="DEC/d2.png" alt="Image 2">
+      <img src="DEC/d3.png" alt="Image 3">
+      <img src="DEC/d4.png" alt="Image 4">
+      <img src="DEC/d5.png" alt="Image 5">
+      <img src="DEC/d6.png" alt="Image 6">
+      <img src="DEC/d7.png" alt="Image 7">
+      <img src="DEC/d8.png" alt="Image 8">
+      <img src="DEC/d9.png" alt="Image 9">
+      <img src="DEC/d10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/jan.png" alt="January">
+    <div class="gallery">
+      <img src="JAN/j1.png" alt="Image 1">
+      <img src="JAN/j2.png" alt="Image 2">
+      <img src="JAN/j3.png" alt="Image 3">
+      <img src="JAN/j4.png" alt="Image 4">
+      <img src="JAN/j5.png" alt="Image 5">
+      <img src="JAN/j6.png" alt="Image 6">
+      <img src="JAN/j8.png" alt="Image 8">
+      <img src="JAN/j9.png" alt="Image 9">
+      <img src="JAN/j10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/feb.png" alt="February">
+    <div class="gallery">
+      <img src="FEB/f1.png" alt="Image 1">
+      <img src="FEB/f2.png" alt="Image 2">
+      <img src="FEB/f3.png" alt="Image 3">
+      <img src="FEB/f4.png" alt="Image 4">
+      <img src="FEB/f5.png" alt="Image 5">
+      <img src="FEB/f6.png" alt="Image 6">
+      <img src="FEB/f7.png" alt="Image 7">
+      <img src="FEB/f8.png" alt="Image 8">
+      <img src="FEB/f9.png" alt="Image 9">
+      <img src="FEB/f10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="month-section">
+    <img class="month-logo" src="Images/mar.png" alt="March">
+    <div class="gallery">
+      <img src="MAR/m1.png" alt="Image 1">
+      <img src="MAR/m2.png" alt="Image 2">
+      <img src="MAR/m3.png" alt="Image 3">
+      <img src="MAR/m4.png" alt="Image 4">
+      <img src="MAR/m5.png" alt="Image 5">
+      <img src="MAR/m6.png" alt="Image 6">
+      <img src="MAR/m7.png" alt="Image 7">
+      <img src="MAR/m8.png" alt="Image 8">
+      <img src="MAR/m9.png" alt="Image 9">
+      <img src="MAR/m10.png" alt="Image 10">
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <img id="modal-img" src="" alt="Popup Image">
+  </div>
+  <audio id="click-sound">
+    <source src="click-bubblesound.mp3" type="audio/mp3">
+  </audio>
+  <script>
+    function playClickSound() {
+      const clickSound = document.getElementById('click-sound');
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+    const galleryImages = document.querySelectorAll('.gallery img');
+    galleryImages.forEach(img => {
+      img.addEventListener('click', function() {
+        playClickSound();
+        const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-img');
+        modalImg.src = this.src;
+        modal.style.display = 'flex';
+      });
+    });
+    const modal = document.getElementById('modal');
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        playClickSound();
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #C9D3AC;
+            color: #333;
+        }
+
+        .hero {
+            text-align: left;
+            padding: 60px 20px 30px;
+            background-color: #C9D3AC;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            color: #456756;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #6D6D6D;
+            font-size: 16px;
+        }
+
+        .faq-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #E9EDD8;
+        }
+
+        .faq-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .faq-sidebar {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .faq-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-sidebar li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #4D5D53;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .faq-content {
+            flex: 2;
+            min-width: 250px;
+        }
+
+        .faq-item {
+            border-top: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .faq-item:first-child {
+            border-top: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #4D5D53;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            color: #555;
+            font-size: 14px;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-contact {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #4D5D53;
+        }
+
+        .faq-contact a {
+            color: #4D5D53;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .faq-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .vector {
+            mix-blend-mode: multiply;
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+            transform: translate(90px, -30px);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div style="display: flex;">
+            <div>
+                <h1>FAQs</h1>
+                <p>
+                    Have questions? Here you'll find the answers<br> most valued by our partners, along with access <br> to step-by-step instructions and support.
+                </p>
+            </div>
+            <img class="vector" src="Images/faq.jpeg" alt="" />
+        </div>
+    </section>
+
+    <div class="faq-wrapper">
+        <div class="faq-columns">
+            <aside class="faq-sidebar">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Teams</li>
+                    <li>Yearbook</li>
+                    <li>Photo Album</li>
+                    <li>Videos</li>
+                </ul>
+            </aside>
+
+            <div class="faq-content">
+                <div class="faq-item">
+                    <div class="faq-question">
+
+<span> What is Miahnista? </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Miahnista is our official website and digital time capsule for the Jeremiah section of 11-HUMSS DPRO SHS. It serves as a repository of photos, videos, and memorable moments that capture our journey together throughout the school year.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span> Who are we? </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We are Jeremiah—a dynamic, diverse community from Olivarez College Parañaque known for our academic achievements, competitive spirit, and camaraderie. Under the guidance of adviser Vincent Quintero, we celebrate each challenge and victory as part of our unique collective story.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span> What is the purpose of this website? </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            The website is designed to preserve our shared experiences and milestones. It not only captures our day-to-day memories but also serves as a tribute to the relationships and adventures that have made our time together unforgettable—ensuring that even as time passes, our special moments remain accessible.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span> How can Miahnista help us reconnect us with our past? </span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Miahnista functions as a digital archive that allows current and future members of Jeremiah to revisit precious memories, celebrate our growth, and reflect on the strong bonds formed during our eleventh grade journey. It’s a reminder of how every success and shared laughter has contributed to shaping who we are today.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-contact">
+            <p>
+                Still have questions? <a href="#">Contact us</a> and we'll be happy to assist.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+
+                document.querySelectorAll('.faq-item').forEach(el => {
+                    if (el !== item) el.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

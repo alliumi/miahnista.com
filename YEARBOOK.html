@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YEARBOOK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #C9D3AC;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      opacity: 0;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: fadeIn 1s forwards;
+    }
+    .gallery img:nth-child(1) { animation-delay: 0.05s; }
+    .gallery img:nth-child(2) { animation-delay: 0.1s; }
+    .gallery img:nth-child(3) { animation-delay: 0.15s; }
+    .gallery img:nth-child(4) { animation-delay: 0.2s; }
+    .gallery img:nth-child(5) { animation-delay: 0.25s; }
+    .gallery img:nth-child(6) { animation-delay: 0.3s; }
+    .gallery img:nth-child(7) { animation-delay: 0.35s; }
+    .gallery img:nth-child(8) { animation-delay: 0.4s; }
+    .gallery img:nth-child(9) { animation-delay: 0.45s; }
+    .gallery img:nth-child(10) { animation-delay: 0.5s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeInModal 0.3s;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      animation: popUp 0.3s forwards;
+    }
+    @keyframes fadeInModal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .yearbook {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      transform: scale(2.0);
+    }
+  </style>
+</head>
+<body>
+  <img class="yearbook" src="Images/yearbook.png" alt="Yearbook">
+  <div class="gallery">
+    <img src="YEARBOOK/1.png" alt="Image 1">
+    <img src="YEARBOOK/3.png" alt="Image 2">
+    <img src="YEARBOOK/2.png" alt="Image 3">
+    <img src="YEARBOOK/5.png" alt="Image 4">
+    <img src="YEARBOOK/4.png" alt="Image 5">
+    <img src="YEARBOOK/11.png" alt="Image 6">
+    <img src="YEARBOOK/7.png" alt="Image 7">
+    <img src="YEARBOOK/8.png" alt="Image 8">
+    <img src="YEARBOOK/9.png" alt="Image 9">
+    <img src="YEARBOOK/10.png" alt="Image 10">
+    <img src="YEARBOOK/6.png" alt="Image 11">
+    <img src="YEARBOOK/12.png" alt="Image 12">
+    <img src="YEARBOOK/13.png" alt="Image 13">
+    <img src="YEARBOOK/14.png" alt="Image 14">
+    <img src="YEARBOOK/15.png" alt="Image 15">
+    <img src="YEARBOOK/16.png" alt="Image 16">
+    <img src="YEARBOOK/17.png" alt="Image 17">
+    <img src="YEARBOOK/18.png" alt="Image 18">
+    <img src="YEARBOOK/19.png" alt="Image 19">
+    <img src="YEARBOOK/20.png" alt="Image 20">
+    <img src="YEARBOOK/21.png" alt="Image 21">
+    <img src="YEARBOOK/22.png" alt="Image 22">
+    <img src="YEARBOOK/23.png" alt="Image 23">
+    <img src="YEARBOOK/24.png" alt="Image 24">
+    <img src="YEARBOOK/26.png" alt="Image 26">
+    <img src="YEARBOOK/27.png" alt="Image 27">
+    <img src="YEARBOOK/28.png" alt="Image 28">
+    <img src="YEARBOOK/29.png" alt="Image 29">
+    <img src="YEARBOOK/30.png" alt="Image 30">
+    <img src="YEARBOOK/31.png" alt="Image 31">
+<img src="YEARBOOK/32.png" alt="Image 32">
+    <img src="YEARBOOK/33.png" alt="Image 33">
+    <img src="YEARBOOK/34.png" alt="Image 34">
+    <img src="YEARBOOK/35.png" alt="Image 35">
+    <img src="YEARBOOK/36.png" alt="Image 36">
+    <img src="YEARBOOK/37.png" alt="Image 37">
+    <img src="YEARBOOK/38.png" alt="Image 38">
+    <img src="YEARBOOK/39.png" alt="Image 39">
+    <img src="YEARBOOK/40.png" alt="Image 40">
+    <img src="YEARBOOK/41.png" alt="Image 41">
+    <img src="YEARBOOK/42.png" alt="Image 42">
+    <img src="YEARBOOK/43.png" alt="Image 43">
+    <img src="YEARBOOK/44.png" alt="Image 44">
+    <img src="YEARBOOK/45.png" alt="Image 45">
+    <img src="YEARBOOK/46.png" alt="Image 46">
+    <img src="YEARBOOK/47.png" alt="Image 47">
+    <img src="YEARBOOK/48.png" alt="Image 48">
+    <img src="YEARBOOK/49.png" alt="Image 49">
+    <img src="YEARBOOK/50.png" alt="Image 50">
+    <img src="YEARBOOK/51.png" alt="Image 51">
+    <img src="YEARBOOK/52.png" alt="Image 52">
+    <img src="YEARBOOK/53.png" alt="Image 53">
+    <img src="YEARBOOK/54.png" alt="Image 54">
+    <img src="YEARBOOK/55.png" alt="Image 55">
+    <img src="YEARBOOK/56.png" alt="Image 56">
+    <img src="YEARBOOK/57.png" alt="Image 57">
+    <img src="YEARBOOK/58.png" alt="Image 58">
+    <img src="YEARBOOK/59.png" alt="Image 59">
+    <img src="YEARBOOK/60.png" alt="Image 60">
+    <img src="YEARBOOK/61.png" alt="Image 61">
+    <img src="YEARBOOK/62.png" alt="Image 62">
+    <img src="YEARBOOK/63.png" alt="Image 63">
+    <img src="YEARBOOK/64.png" alt="Image 64">
+    <img src="YEARBOOK/65.png" alt="Image 65">
+    <img src="YEARBOOK/66.png" alt="Image 66">
+    <img src="YEARBOOK/67.png" alt="Image 67">
+    <img src="YEARBOOK/68.png" alt="Image 68">
+    <img src="YEARBOOK/69.png" alt="Image 69">
+    <img src="YEARBOOK/70.png" alt="Image 70">
+  </div>
+
+  <div class="modal" id="modal">
+    <img id="modal-img" src="" alt="Popup Image">
+  </div>
+
+  <audio id="click-sound">
+    <source src="click-bubblesound.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    function playClickSound() {
+      const clickSound = document.getElementById('click-sound');
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+
+    const galleryImages = document.querySelectorAll('.gallery img');
+    galleryImages.forEach(img => {
+      img.addEventListener('click', function() {
+        playClickSound();
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        modalImg.src = this.src;
+        modal.style.display = 'flex';
+      });
+    });
+
+    const modal = document.getElementById('modal');
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        playClickSound();
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
